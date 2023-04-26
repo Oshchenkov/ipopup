@@ -2,7 +2,6 @@
   "name": "ipopup",
   "version": "1.0.0",
   "description": "TS modal popup",
-  "type": "module",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
@@ -14,5 +13,9 @@
   "devDependencies": {
     "typescript": "^5.0.2",
     "vite": "^4.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Oshchenkov/ipopup.git"
   }
 }
