@@ -1,9 +1,10 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
+import dts from 'vite-plugin-dts';
 
 export default defineConfig(() => {
     const dir = resolve(__dirname, 'counter.js');
-    console.log("-> dir", dir);
+    console.log('-> dir', dir);
     return {
         build: {
             lib: {
@@ -12,6 +13,7 @@ export default defineConfig(() => {
                 name: 'MyLib',
                 // the proper extensions will be added
                 fileName: 'my-lib',
+                formats: ['es', 'umd', 'cjs']
             },
             rollupOptions: {
                 // make sure to externalize deps that shouldn't be bundled
@@ -23,5 +25,6 @@ export default defineConfig(() => {
                 },
             },
         },
+        plugins: [dts()],
     };
 });
