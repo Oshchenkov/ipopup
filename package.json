@@ -2,7 +2,19 @@
   "name": "ipopup",
   "version": "1.0.0",
   "description": "TS modal popup",
-  "main": "index.js",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/i-popup.umd.js",
+  "module": "./dist/i-popup.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/i-popup.js",
+      "require": "./dist/i-popup.umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "devs": "vite --https",
@@ -12,6 +24,7 @@
   "author": "Oshchenkov",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.1.7",
     "typescript": "^5.0.2",
     "vite": "^4.3.0",
     "vite-plugin-dts": "^2.3.0"

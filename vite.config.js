@@ -3,13 +3,11 @@ import { resolve } from 'path';
 import dts from 'vite-plugin-dts';
 
 export default defineConfig(() => {
-    const dir = resolve(__dirname, 'counter.js');
-    console.log('-> dir', dir);
     return {
         build: {
             lib: {
                 // Could also be a dictionary or array of multiple entry points
-                entry: resolve(__dirname, 'src/counter.ts'),
+                entry: resolve(__dirname, 'src/index.ts'),
                 name: 'IPopup',
                 // the proper extensions will be added
                 fileName: 'i-popup',
