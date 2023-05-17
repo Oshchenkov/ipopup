@@ -8,7 +8,7 @@
   ],
   "main": "./dist/i-popup.umd.js",
   "module": "./dist/i-popup.js",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/types/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/i-popup.js",
