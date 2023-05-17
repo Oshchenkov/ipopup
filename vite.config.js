@@ -10,9 +10,9 @@ export default defineConfig(() => {
             lib: {
                 // Could also be a dictionary or array of multiple entry points
                 entry: resolve(__dirname, 'src/counter.ts'),
-                name: 'MyLib',
+                name: 'IPopup',
                 // the proper extensions will be added
-                fileName: 'my-lib',
+                fileName: 'i-popup',
                 formats: ['es', 'umd', 'cjs']
             },
             rollupOptions: {
