@@ -24,7 +24,6 @@
   "author": "Oshchenkov",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^20.1.7",
     "typescript": "^5.0.2",
     "vite": "^4.3.0",
     "vite-plugin-dts": "^2.3.0"

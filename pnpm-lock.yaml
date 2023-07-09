@@ -1,16 +1,14 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@types/node': ^20.1.7
   typescript: ^5.0.2
   vite: ^4.3.0
   vite-plugin-dts: ^2.3.0
 
 devDependencies:
-  '@types/node': 20.1.7
   typescript: 5.0.4
-  vite: 4.3.1_@types+node@20.1.7
-  vite-plugin-dts: 2.3.0_pc27wvudpydngp7ymax6jam5ye
+  vite: 4.3.1
+  vite-plugin-dts: 2.3.0_vite@4.3.1
 
 packages:
 
@@ -243,24 +241,24 @@ packages:
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
     dev: true
 
-  /@microsoft/api-extractor-model/7.26.5_@types+node@20.1.7:
+  /@microsoft/api-extractor-model/7.26.5:
     resolution: {integrity: sha512-sv1dF9B3AeMURTW0xubvmrX/tLFe2bpmHJBXKiqfOl2YOoLNjreIqmPHPe1vDSq9MDxAJLqvyurjOf87abVJBQ==}
     dependencies:
       '@microsoft/tsdoc': 0.14.2
       '@microsoft/tsdoc-config': 0.16.2
-      '@rushstack/node-core-library': 3.56.0_@types+node@20.1.7
+      '@rushstack/node-core-library': 3.56.0
     transitivePeerDependencies:
       - '@types/node'
     dev: true
 
-  /@microsoft/api-extractor/7.34.5_@types+node@20.1.7:
+  /@microsoft/api-extractor/7.34.5:
     resolution: {integrity: sha512-0CUMSHvJ3Tq7ZJg09vn3kwvZN41k6dbe4zcPrDpZwQKh/dXIL5oQ7hbrbrASBDlE5DSPHs+7iGYa9FGGdgyrCA==}
     hasBin: true
     dependencies:
-      '@microsoft/api-extractor-model': 7.26.5_@types+node@20.1.7
+      '@microsoft/api-extractor-model': 7.26.5
       '@microsoft/tsdoc': 0.14.2
       '@microsoft/tsdoc-config': 0.16.2
-      '@rushstack/node-core-library': 3.56.0_@types+node@20.1.7
+      '@rushstack/node-core-library': 3.56.0
       '@rushstack/rig-package': 0.3.18
       '@rushstack/ts-command-line': 4.13.2
       colors: 1.2.5
@@ -321,7 +319,7 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@rushstack/node-core-library/3.56.0_@types+node@20.1.7:
+  /@rushstack/node-core-library/3.56.0:
     resolution: {integrity: sha512-HyaRfgL77I8y6HCFYkLnAUWjsniDrIHlomic570TJ/ehd+pOdrRr95APAYGFw+nVwXE4qyEUTyYMWxsOnV14VA==}
     peerDependencies:
       '@types/node': '*'
@@ -329,7 +327,6 @@ packages:
       '@types/node':
         optional: true
     dependencies:
-      '@types/node': 20.1.7
       colors: 1.2.5
       fs-extra: 7.0.1
       import-lazy: 4.0.0
@@ -370,10 +367,6 @@ packages:
 
   /@types/estree/1.0.1:
     resolution: {integrity: sha512-LG4opVs2ANWZ1TJoKc937iMmNstM/d0ae1vNbnBvBhqCSezgVUOzcLCqbI5elV8Vy6WKwKjaqR+zO9VKirBBCA==}
-    dev: true
-
-  /@types/node/20.1.7:
-    resolution: {integrity: sha512-WCuw/o4GSwDGMoonES8rcvwsig77dGCMbZDrZr2x4ZZiNW4P/gcoZXe/0twgtobcTkmg9TuKflxYL/DuwDyJzg==}
     dev: true
 
   /ajv/6.12.6:
@@ -825,30 +818,30 @@ packages:
     engines: {node: '>= 0.10'}
     dev: true
 
-  /vite-plugin-dts/2.3.0_pc27wvudpydngp7ymax6jam5ye:
+  /vite-plugin-dts/2.3.0_vite@4.3.1:
     resolution: {integrity: sha512-WbJgGtsStgQhdm3EosYmIdTGbag5YQpZ3HXWUAPCDyoXI5qN6EY0V7NXq0lAmnv9hVQsvh0htbYcg0Or5Db9JQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: '>=2.9.0'
     dependencies:
       '@babel/parser': 7.21.4
-      '@microsoft/api-extractor': 7.34.5_@types+node@20.1.7
+      '@microsoft/api-extractor': 7.34.5
       '@rollup/pluginutils': 5.0.2
-      '@rushstack/node-core-library': 3.56.0_@types+node@20.1.7
+      '@rushstack/node-core-library': 3.56.0
       debug: 4.3.4
       fast-glob: 3.2.12
       fs-extra: 10.1.0
       kolorist: 1.8.0
       magic-string: 0.29.0
       ts-morph: 18.0.0
-      vite: 4.3.1_@types+node@20.1.7
+      vite: 4.3.1
     transitivePeerDependencies:
       - '@types/node'
       - rollup
       - supports-color
     dev: true
 
-  /vite/4.3.1_@types+node@20.1.7:
+  /vite/4.3.1:
     resolution: {integrity: sha512-EPmfPLAI79Z/RofuMvkIS0Yr091T2ReUoXQqc5ppBX/sjFRhHKiPPF/R46cTdoci/XgeQpB23diiJxq5w30vdg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -873,7 +866,6 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.1.7
       esbuild: 0.17.18
       postcss: 8.4.23
       rollup: 3.20.7
