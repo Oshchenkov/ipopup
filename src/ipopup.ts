@@ -21,7 +21,7 @@ export default class popupContainer implements IPopupContainer {
   }
 
   isClient(): boolean {
-    return Boolean(!window);
+    return Boolean(window);
   }
 
   errorConsoleMessage(msg: string) {

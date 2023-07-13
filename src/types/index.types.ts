@@ -4,6 +4,10 @@ export interface IPopupContainer {
 
 export interface IPopupInstance {
   id: string;
+  popupDomElement: HTMLDivElement;
+  show: IPopupInstance;
+  hide: IPopupInstance;
+  destroy: void; // or id of popupIsnt
 }
 
 export interface IOptions {
